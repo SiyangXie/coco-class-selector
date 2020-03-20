@@ -3,7 +3,6 @@ import os
 
 if __name__ == "__main__":
     for filename in os.listdir("./COCO"):
-        deletion = False
         with open(os.path.join('./COCO', filename), 'r') as f:
             lines = f.readlines()
         with open(os.path.join('./COCO', filename), 'w') as f:
