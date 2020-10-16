@@ -1,1 +1,17 @@
-classes = ['0']
+# coco class selector
+class : ['0']
+
+# coco class selection src and dst folders
+src_label: '..\\coco2014\\labels\\train2014'
+src_image: '..\\coco2014\\train2014'
+dst_label: '..\\coco2014_filtered\\labels'
+dst_image: '..\\coco2014_filtered\\images'
+
+
+# train : valid : test
+ratio: [0.8, 0.1 ,0.1]
+
+# split dir with yolov5 format
+v5_simage: '..\\'
+v5_slabel: '..\\'
+v5_dest: '..\\'
