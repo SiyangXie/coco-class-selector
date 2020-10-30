@@ -1,17 +1,26 @@
 # coco class selector
 class : ['0']
 
-# coco class selection src and dst folders
-src_label: '..\\coco2014\\labels\\train2014'
-src_image: '..\\coco2014\\train2014'
-dst_label: '..\\coco2014_filtered\\labels'
-dst_image: '..\\coco2014_filtered\\images'
-
+# filter: coco class selection src and dst folders
+src_label: '..\\..\\data\\coco2014\\labels\\train2014'
+src_image: '..\\..\\data\\coco2014\\train2014'
+dst_label: 'D:\data\coco2014_filtered\labels'
+dst_image: 'D:\data\coco2014_filtered\images'
 
 # train : valid : test
 ratio: [0.8, 0.1 ,0.1]
 
 # split dir with yolov5 format
-v5_simage: '..\\'
-v5_slabel: '..\\'
-v5_dest: '..\\'
+split_label: '..\\..\\data\coco2014_filtered\labels'
+split_image: '..\\..\\data\coco2014_filtered\\images'
+
+yolov5_train_labels: 'D:\\data\\coco2014_filtered\\yolov5\\train\\labels'
+yolov5_train_images: 'D:\\data\\coco2014_filtered\\yolov5\\train\\images'
+yolov5_val_labels: 'D:\\data\\coco2014_filtered\\yolov5\\valid\\labels'
+yolov5_val_images: 'D:\\data\\coco2014_filtered\\yolov5\\valid\\images'
+yolov5_test_labels: 'D:\\data\\coco2014_filtered\\yolov5\\test\\labels'
+yolov5_test_images: 'D:\\data\\coco2014_filtered\\yolov5\\test\\images'
+
+# concat labels
+slabel_dir: 'D:\data\head+body\coco\labels'
+dlabel_dir: 'D:\data\head+body\coco\new'
