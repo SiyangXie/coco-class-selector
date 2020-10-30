@@ -7,7 +7,7 @@ def generate():
     config = yaml.load(open(opt.cfg), Loader=yaml.FullLoader)
 
     if opt.do == 'filter':
-        utils.coco_dataset_filter(lnum=opt.n, config=config)
+        utils.coco_filter(label_num=opt.n, config=config)
     if opt.do == 'split':
         utils.coco_split(config=config)
     if opt.do == 'concat':
