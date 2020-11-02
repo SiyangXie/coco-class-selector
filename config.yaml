@@ -8,19 +8,20 @@ dst_label: 'D:\data\coco2014_filtered\labels'
 dst_image: 'D:\data\coco2014_filtered\images'
 
 # train : valid : test
-ratio: [0.8, 0.1 ,0.1]
+ratio: [0.7, 0.15 ,0.15]
 
 # split dir with yolov5 format
-split_label: '..\\..\\data\coco2014_filtered\labels'
-split_image: '..\\..\\data\coco2014_filtered\\images'
-
-yolov5_train_labels: 'D:\\data\\coco2014_filtered\\yolov5\\train\\labels'
-yolov5_train_images: 'D:\\data\\coco2014_filtered\\yolov5\\train\\images'
-yolov5_val_labels: 'D:\\data\\coco2014_filtered\\yolov5\\valid\\labels'
-yolov5_val_images: 'D:\\data\\coco2014_filtered\\yolov5\\valid\\images'
-yolov5_test_labels: 'D:\\data\\coco2014_filtered\\yolov5\\test\\labels'
-yolov5_test_images: 'D:\\data\\coco2014_filtered\\yolov5\\test\\images'
+split_yolov5: 'D:\data\coco2014_filtered\yolov5'
+split_label: 'D:\data\train-camera-train\labels'
+split_image: 'D:\data\train-camera-train\images'
 
 # concat labels
 slabel_dir: 'D:\data\head+body\coco\labels'
 dlabel_dir: 'D:\data\head+body\coco\new'
+
+# match
+match_image_dir: 'D:\data\coco2014_filtered\images'
+match_label_dir: 'D:\data\coco2014_filtered\labels'
+
+# rename
+rename_dir: 'D:\data\train-camera\helmet\images'

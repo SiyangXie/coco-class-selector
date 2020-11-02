@@ -12,11 +12,15 @@ def generate():
         utils.coco_split(config=config)
     if opt.do == 'concat':
         utils.concat_label(config=config)
+    if opt.do == 'match':
+        utils.label_match_image(config=config)
+    if opt.do == 'rename':
+        utils.rename(config=config)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--do', type=str, default='filter', help='[filter, split, yolov3, yolov5]')
+    parser.add_argument('--do', type=str, default='filter', help='[filter, split, concat, match]')
     parser.add_argument('--n', type=str, default='-1', help='num of labels selected')
     parser.add_argument('--cfg', type=str, default='.\\config.yaml', help='config yaml folder')
 
