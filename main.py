@@ -20,7 +20,7 @@ def generate():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--do', type=str, default='filter', help='[filter, split, concat, match]')
+    parser.add_argument('--do', type=str, default='filter', help='[filter, split, concat, match, rename]')
     parser.add_argument('--n', type=str, default='-1', help='num of labels selected')
     parser.add_argument('--cfg', type=str, default='.\\config.yaml', help='config yaml folder')
 
@@ -28,3 +28,4 @@ if __name__ == "__main__":
 
     generate()
     # # python main.py --do filter --n 1000
+    # # python main.py --do split

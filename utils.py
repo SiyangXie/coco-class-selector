@@ -5,7 +5,7 @@ from tqdm import tqdm
 import random
 
 
-# # from a full coco a filtered dataset
+# # from a full coco to a filtered dataset
 def filter_label(src_label_dir, dst_label_dir, label_num, class_list):
     assert os.path.exists(src_label_dir), 'ERROR: --source label folder does not exist.'
     assert len(os.listdir(src_label_dir)), 'ERROR: --source label folder is empty.'
@@ -217,6 +217,6 @@ def rename(config):
     with tqdm(total=len(src_image_dir), file=sys.stdout) as pbar:
         n = 1
         for image_file in os.listdir(src_image_dir):
-            os.rename(os.path.join(src_image_dir, image_file), os.path.join(src_image_dir, 'helmet' + str(n) + '.jpg'))
+            os.rename(os.path.join(src_image_dir, image_file), os.path.join(src_image_dir, 'not_smoking' + str(n) + '.jpg'))
             n += 1
             pbar.update(1)

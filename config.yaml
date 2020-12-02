@@ -24,4 +24,4 @@ match_image_dir: 'D:\data\coco2014_filtered\images'
 match_label_dir: 'D:\data\coco2014_filtered\labels'
 
 # rename
-rename_dir: 'D:\data\train-camera\helmet\images'
+rename_dir: 'D:\data\surveillance\not_smoking'
